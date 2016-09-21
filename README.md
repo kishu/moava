@@ -3,6 +3,20 @@ https://moava.kr
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
 
+## firebase config
+It should exists `firebase.config.ts` in `src` directory.
+
+```
+export const firebaseConfig = {
+  "apiKey": "<YOUR FIREBASE API KEY>",
+  "authDomain": "woovi-2e150.firebaseapp.com",
+  "databaseURL": "https://woovi-2e150.firebaseio.com",
+  "storageBucket": "woovi-2e150.appspot.com"
+};
+```
+
+If you want firebase api key for contributes let me know via issue it.
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
