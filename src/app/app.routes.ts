@@ -1,11 +1,11 @@
 import { Routes } from '@angular/router';
 
-import { VideosRoutes, VideoListComponent } from './videos/index';
+import { VideosRoutes, VideosComponent } from './videos/index';
 
 export const routes: Routes = [
 	{
 		path: '',
-		component: VideoListComponent
+		component: VideosComponent
 
 	},
 	...VideosRoutes

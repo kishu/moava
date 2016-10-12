@@ -1,3 +1,8 @@
-<p>
-  video-list works!
-</p>
+<div class="mdl-grid">
+	<app-video-detail
+		*ngFor="let video of videos$ | async"
+		[video]="video"
+		class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"></app-video-detail>
+</div>
+
+<button (click)="getNextVideos()">more</button>

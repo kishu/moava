@@ -1,0 +1,16 @@
+@media (min-width: 840px) {
+    .mdl-cell {margin: 0}
+    .mdl-cell--3-col, .mdl-cell--3-col-desktop.mdl-cell--3-col-desktop {width: 25%}
+}
+
+@media (max-width: 839px) and (min-width: 480px) {
+    .mdl-cell {margin: 0}
+    .mdl-cell--4-col-tablet.mdl-cell--4-col-tablet {width: 50%}
+}
+
+@media (max-width: 479px) {
+    .mdl-cell {margin: 0}
+    .mdl-cell--4-col-phone {width: 100%}
+}
+
+.mdl-grid {padding: 0}
