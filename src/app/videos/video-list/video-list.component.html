@@ -1,8 +1,8 @@
-<div class="mdl-grid">
+<div class="mdl-grid" infinite-scroll
+		 [infiniteScrollDistance]="10"
+		 (scrolled)="getNextVideos">
 	<app-video-detail
 		*ngFor="let video of videos$ | async"
 		[video]="video"
 		class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"></app-video-detail>
 </div>
-
-<button (click)="getNextVideos()">more</button>

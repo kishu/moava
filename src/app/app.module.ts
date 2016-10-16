@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 //import { FormsModule } from '@angular/forms';
 //import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { routes } from './app.routes';
 
@@ -10,9 +11,10 @@ import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig } from '../firebase.config';
 
 import { VideosModule } from './videos/videos.module';
+import { HeaderComponent, DrawerComponent } from './shared/index';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HeaderComponent, DrawerComponent],
   imports: [
     BrowserModule,
     //FormsModule,

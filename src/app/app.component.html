@@ -1,1 +1,9 @@
-<router-outlet></router-outlet>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	<header app-header class="mdl-layout__header mdl-layout__header--scroll mdl-layout__header--seamed"></header>
+	<div app-drawer class="mdl-layout__drawer"></div>
+	<main class="mdl-layout__content">
+		<div class="page-content">
+			<router-outlet></router-outlet>
+		</div>
+	</main>
+</div>

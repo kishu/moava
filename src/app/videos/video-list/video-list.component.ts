@@ -7,7 +7,7 @@ import 'rxjs/add/operator/scan';
 
 @Component({
   selector: 'app-video-list',
-  templateUrl: './video-list.component.html',
+	templateUrl: './video-list.component.html',
   styleUrls: ['./video-list.component.css']
 })
 export class VideoListComponent implements OnInit {
@@ -34,6 +34,7 @@ export class VideoListComponent implements OnInit {
 	}
 
 	private getNextVideos() {
+		console.log("getNextVideos");
 		this.getVideos(this.lastVideo.$key);
 	}
 

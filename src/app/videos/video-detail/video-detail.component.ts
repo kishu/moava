@@ -24,5 +24,4 @@ export class VideoDetailComponent implements OnInit {
 	  this.backgroundStyle = this.sanitizer.
 		  bypassSecurityTrustStyle(`url(${thumbnailUrl}) center / cover`);
   }
-
 }
