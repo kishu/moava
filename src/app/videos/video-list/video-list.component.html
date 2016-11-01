@@ -1,8 +1,17 @@
-<div class="mdl-grid" infinite-scroll
-		 [infiniteScrollDistance]="10"
-		 (scrolled)="getNextVideos">
+<div *ngIf="videosCount == 0" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+<div class="mdl-grid mdl-grid--no-spacing">
 	<app-video-detail
 		*ngFor="let video of videos$ | async"
 		[video]="video"
+		(onPlayed)="onPlayed($event)"
 		class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone"></app-video-detail>
+	<div class="mdl-cell mdl-cell--12-col">
+		<button
+			(click)="onMore()"
+			[hidden]="videosCount === 0"
+			class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mav-more-button">
+			<i [hidden]="loading" class="material-icons">add</i>
+			<div [hidden]="!loading" class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active mav-more-spiner"></div>
+		</button>
+	</div>
 </div>
