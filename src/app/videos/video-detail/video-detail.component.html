@@ -3,13 +3,9 @@
 	data-id="{{video.$key}}"
 	[style.background]="backgroundStyle"
 	class="mdl-card">
-	<a href="#" (click)="onPlay($event)">
+	<a (click)="goDetail($event)">
 		<div class="mdl-card__title">
 			<h2 class="mdl-card__title-text">{{video.title}}</h2>
 		</div>
 	</a>
-</div>
-<div
-	*ngIf="play">
-	<video tabindex="0" class="_mgq _mve" style="width: 375px; height: 180px; left: 0px; top: 0px;" x-webkit-airplay="allow" title="2016. Kyoto, Osaka" controls="" src="https://r8---sn-n3cgv5qc5oq-bh2r.googlevideo.com/videoplayback?itag=18&amp;requiressl=yes&amp;ei=mhsLWPHLJ8_q4AL8s72gAg&amp;key=yt6&amp;source=youtube&amp;pl=26&amp;ipbits=0&amp;initcwndbps=3783750&amp;expire=1477144570&amp;signature=CF6B96F8CDA88ADB41CC445D5C46E0C710F6E6E5.56BB34CC25FD62529926298D0D6E296AE7EFD84C&amp;lmt=1463494125406001&amp;ratebypass=yes&amp;upn=qfFJNISX1sI&amp;dur=151.533&amp;mn=sn-n3cgv5qc5oq-bh2r&amp;mm=31&amp;sparams=dur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&amp;id=o-AAJOo_msZLVFqW4P3TRNWtcMSNTCxzii6kYu7ph80_ot&amp;ip=175.113.143.25&amp;mime=video%2Fmp4&amp;mv=m&amp;mt=1477122717&amp;ms=au&amp;cpn=NHYxtuK3BvJa7-FD&amp;ptk=youtube_none&amp;pltype=contentugc&amp;c=MWEB&amp;cver=1.20161020"></video>
 </div>

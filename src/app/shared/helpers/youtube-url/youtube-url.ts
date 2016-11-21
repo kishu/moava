@@ -1,4 +1,4 @@
-export class YoutubeUrl {
+export class  YoutubeUrl {
 
 	private url: string;
 	private id: string;

@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 
-import { VideosRoutes, VideosComponent } from './videos/index';
+import { VideosRoutes, VideosComponent } from './videos';
+import { VideoRoutes, VideoComponent } from './video'
 
 export const routes: Routes = [
 	{
@@ -8,5 +9,6 @@ export const routes: Routes = [
 		component: VideosComponent
 
 	},
-	...VideosRoutes
+	...VideosRoutes,
+	...VideoRoutes
 ];

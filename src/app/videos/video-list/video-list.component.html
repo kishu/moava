@@ -1,5 +1,7 @@
-<div *ngIf="videosCount == 0" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
 <div class="mdl-grid mdl-grid--no-spacing">
+	<div *ngIf="videosCount == 0" class="mdl-cell mdl-cell--12-col">
+		<div class="mdl-progress mdl-js-progress mdl-progress__indeterminate mav-loading-spiner"></div>
+	</div>
 	<app-video-detail
 		*ngFor="let video of videos$ | async"
 		[video]="video"

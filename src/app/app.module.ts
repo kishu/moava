@@ -13,6 +13,7 @@ import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig } from '../firebase.config';
 
 import { VideosModule } from './videos/videos.module';
+import { VideoModule } from './video/video.module';
 import { HeaderComponent, DrawerComponent } from './shared/index';
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HeaderComponent, DrawerComponent } from './shared/index';
 	  InfiniteScrollModule,
 	  RouterModule.forRoot(routes),
 	  AngularFireModule.initializeApp(firebaseConfig),
-	  VideosModule
+	  VideosModule,
+	  VideoModule
   ],
   providers: [InfiniteScrollService],
   bootstrap: [AppComponent]
