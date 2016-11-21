@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "useragent": "registry:npm/useragent#2.1.8+20160307004256"
+  }
+}
