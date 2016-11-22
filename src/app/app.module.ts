@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 //import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { InfiniteScrollModule } from 'angular2-infinite-scroll';
-import { InfiniteScrollService } from './shared/index';
 
 import { AppComponent } from './app.component';
 import { routes } from './app.routes';
@@ -22,13 +21,11 @@ import { HeaderComponent, DrawerComponent } from './shared/index';
     BrowserModule,
     //FormsModule,
     //HttpModule,
-	  InfiniteScrollModule,
 	  RouterModule.forRoot(routes),
 	  AngularFireModule.initializeApp(firebaseConfig),
 	  VideosModule,
 	  VideoModule
   ],
-  providers: [InfiniteScrollService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

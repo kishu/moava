@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { InfiniteScrollService } from './shared/index';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +7,5 @@ import { InfiniteScrollService } from './shared/index';
 })
 export class AppComponent {
 
-	constructor(private infiniteScrollService: InfiniteScrollService) { }
-
-	private scrolled() {
-		this.infiniteScrollService.scrolled();
-	}
+	constructor() { }
 }
