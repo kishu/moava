@@ -13,8 +13,8 @@
     "typeRoots": [
       "../node_modules/@types"
     ],
-	"types": [
-		"jasmine"
-	]
+    "types": [
+      "jasmine"
+    ]
   }
 }
