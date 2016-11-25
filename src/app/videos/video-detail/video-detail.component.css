@@ -1,6 +1,6 @@
 :host {margin: 0}
 .mdl-card {width: 100%; border-radius: 0}
 .mdl-card a {text-decoration: none}
-.mdl-card__title {height: 214px; background-color: rgba(0,0,0,0.35)}
-.mdl-card__title-text {color:#fff; font-weight:500; font-size: 22px}
+.mdl-card__title {height: 118px; background-color: rgba(0,0,0,0.35)}
+.mdl-card__title-text {color:#fff; font-weight: 400; font-size: 17px}
 .mdl-card__menu {color: #fff}

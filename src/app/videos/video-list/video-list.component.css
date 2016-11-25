@@ -1,6 +1,7 @@
 @media (min-width: 840px) {
     .mdl-cell {margin: 0}
     .mdl-cell--3-col, .mdl-cell--3-col-desktop.mdl-cell--3-col-desktop {width: 25%}
+    .mdl-cell--1-col, .mdl-cell--1-col-desktop.mdl-cell--1-col-desktop {width: 8.333%}
 }
 
 @media (max-width: 839px) and (min-width: 480px) {

@@ -1,1 +1,9 @@
-<app-video-list></app-video-list>
+<div class="">
+  <div *ngIf="videosCount == 0" class="">
+    <div class="mdl-progress mdl-js-progress mdl-progress__indeterminate mav-loading-spiner"></div>
+  </div>
+  <div class="player">
+    "PLAYER"
+  </div>
+  <app-video-list class="mdl-grid"></app-video-list>
+</div>
